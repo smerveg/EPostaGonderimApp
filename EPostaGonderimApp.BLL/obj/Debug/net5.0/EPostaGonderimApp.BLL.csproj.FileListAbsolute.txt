@@ -1,0 +1,17 @@
+C:\Users\son\source\repos\EPostaGonderimApp\EPostaGonderimApp.BLL\bin\Debug\net5.0\EPostaGonderimApp.BLL.deps.json
+C:\Users\son\source\repos\EPostaGonderimApp\EPostaGonderimApp.BLL\bin\Debug\net5.0\EPostaGonderimApp.BLL.dll
+C:\Users\son\source\repos\EPostaGonderimApp\EPostaGonderimApp.BLL\bin\Debug\net5.0\ref\EPostaGonderimApp.BLL.dll
+C:\Users\son\source\repos\EPostaGonderimApp\EPostaGonderimApp.BLL\bin\Debug\net5.0\EPostaGonderimApp.BLL.pdb
+C:\Users\son\source\repos\EPostaGonderimApp\EPostaGonderimApp.BLL\bin\Debug\net5.0\EPostaGonderimApp.DAL.dll
+C:\Users\son\source\repos\EPostaGonderimApp\EPostaGonderimApp.BLL\bin\Debug\net5.0\EPostaGonderimApp.EntityLayer.dll
+C:\Users\son\source\repos\EPostaGonderimApp\EPostaGonderimApp.BLL\bin\Debug\net5.0\EPostaGonderimApp.DAL.pdb
+C:\Users\son\source\repos\EPostaGonderimApp\EPostaGonderimApp.BLL\bin\Debug\net5.0\EPostaGonderimApp.EntityLayer.pdb
+C:\Users\son\source\repos\EPostaGonderimApp\EPostaGonderimApp.BLL\obj\Debug\net5.0\EPostaGonderimApp.BLL.csproj.AssemblyReference.cache
+C:\Users\son\source\repos\EPostaGonderimApp\EPostaGonderimApp.BLL\obj\Debug\net5.0\EPostaGonderimApp.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\son\source\repos\EPostaGonderimApp\EPostaGonderimApp.BLL\obj\Debug\net5.0\EPostaGonderimApp.BLL.AssemblyInfoInputs.cache
+C:\Users\son\source\repos\EPostaGonderimApp\EPostaGonderimApp.BLL\obj\Debug\net5.0\EPostaGonderimApp.BLL.AssemblyInfo.cs
+C:\Users\son\source\repos\EPostaGonderimApp\EPostaGonderimApp.BLL\obj\Debug\net5.0\EPostaGonderimApp.BLL.csproj.CoreCompileInputs.cache
+C:\Users\son\source\repos\EPostaGonderimApp\EPostaGonderimApp.BLL\obj\Debug\net5.0\EPostaGonderimApp.BLL.csproj.CopyComplete
+C:\Users\son\source\repos\EPostaGonderimApp\EPostaGonderimApp.BLL\obj\Debug\net5.0\EPostaGonderimApp.BLL.dll
+C:\Users\son\source\repos\EPostaGonderimApp\EPostaGonderimApp.BLL\obj\Debug\net5.0\ref\EPostaGonderimApp.BLL.dll
+C:\Users\son\source\repos\EPostaGonderimApp\EPostaGonderimApp.BLL\obj\Debug\net5.0\EPostaGonderimApp.BLL.pdb
