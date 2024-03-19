@@ -1,0 +1,73 @@
+﻿@model EPostaGonderimApp.ConsumeAPI.Models.EPostaViewModels.EPostaDetailVM
+
+@{
+    ViewData["Title"] = "EPostaEkle";
+}
+
+<h1>E-Posta Ekle</h1>
+@if (TempData["Alert"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>@TempData["Alert"]</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+<hr />
+<div class="row">
+    <div class="col-md-8">
+        <form asp-action="EPostaEkle">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="EPostaAdresID" class="control-label">Kime</label>
+
+                @for (int i = 0; i < Model.Kisiler.Count; i++)
+                {
+                    <ul>
+                        <li>
+                            <label>@Model.Kisiler[i].EPostaAdresi</label>
+                            <input type="hidden" asp-for="@Model.Kisiler[i].KisiID" />
+
+                        </li>
+                    </ul>
+
+                }
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <select class="custom-select" asp-for="EPostaAdresID" asp-items="@ViewBag.EPostaAdresleri">
+                    <option value="">Bir adres seçiniz</option>
+                </select>
+                <span asp-validation-for="EPostaAdresID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Konu" class="control-label"></label>
+                <input asp-for="Konu" class="form-control" />
+                <span asp-validation-for="Konu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Icerik" class="control-label"></label>
+                <textarea asp-for="Icerik" class="form-control" id="exampleFormControlTextarea1" rows="9"></textarea>
+                <span asp-validation-for="Icerik" class="text-danger"></span>
+            </div>
+
+
+            <div class="form-group">
+                <input type="submit" value="Gönder" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="KisiSec">Kişi Seçme Sayfasına Geri Dön</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

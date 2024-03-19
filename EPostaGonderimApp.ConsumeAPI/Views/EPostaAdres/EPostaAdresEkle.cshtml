@@ -1,0 +1,61 @@
+﻿@model EPostaGonderimApp.ConsumeAPI.Models.EPostaAdresViewModels.EPostaAdresDetailVM
+
+@{
+    ViewData["Title"] = "EPostaAdresEkle";
+}
+
+<h1>E-Posta Adres Ekle</h1>
+@if (TempData["Alert"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>@TempData["Alert"]</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="EPostaAdresEkle">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Adres" class="control-label"></label>
+                <input asp-for="Adres" class="form-control" />
+                <span asp-validation-for="Adres" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MailSunucuAdres" class="control-label"></label>
+                <input asp-for="MailSunucuAdres" class="form-control" />
+                <span asp-validation-for="MailSunucuAdres" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KullaniciAd" class="control-label"></label>
+                <input asp-for="KullaniciAd" class="form-control" />
+                <span asp-validation-for="KullaniciAd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sifre" class="control-label"></label>
+                <input asp-for="Sifre" class="form-control" />
+                <span asp-validation-for="Sifre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Port" class="control-label"></label>
+                <input asp-for="Port" class="form-control" />
+                <span asp-validation-for="Port" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Ekle" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="EPostaAdresListesi">E-Posta Adres Listesine Geri Dön</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

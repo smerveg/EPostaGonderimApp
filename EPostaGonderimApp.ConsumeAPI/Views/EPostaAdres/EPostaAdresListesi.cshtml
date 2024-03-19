@@ -1,0 +1,48 @@
+﻿@model IEnumerable<EPostaGonderimApp.ConsumeAPI.Models.EPostaAdresViewModels.EPostaAdresListVM>
+
+@{
+    ViewData["Title"] = "E-Posta Adres Listesi";
+}
+
+<h1>E-Posta Adres Listesi</h1>
+@if (TempData["Alert"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>@TempData["Alert"]</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+
+<p>
+    <a class="btn btn-success" asp-action="EPostaAdresEkle">E-Posta Adresi Ekle</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Adres)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MailSunucuAdres)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Adres)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MailSunucuAdres)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

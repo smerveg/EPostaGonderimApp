@@ -1,0 +1,98 @@
+﻿@model IEnumerable<EPostaGonderimApp.ConsumeAPI.Models.EPostaViewModels.EPostaListVM>
+
+@{
+    ViewData["Title"] = "EPostaListesi";
+}
+
+<h1>EPostaListesi</h1>
+@if (TempData["Alert"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>@TempData["Alert"]</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+
+<p>
+    <a class="btn btn-success" asp-controller="EPosta" asp-action="KisiFiltrele">E-Posta Oluştur</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Konu)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Adres)
+            </th>
+
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Konu)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Adres)
+                </td>
+
+                <td>
+                    <button type="button" class="btn btn-warning" id="btnGoruntule" onclick="EPostaGoruntule(@item.EPostaID);">E-Posta Görüntüle</button>
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div class="modal inmodal fade" id="icerikModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <div class="modal-body">
+
+                <h3>E-posta İçeriği</h3>
+             
+                <textarea class="form-control" id="icerik" rows="9"></textarea>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-white btnCancel" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    function EPostaGoruntule(id) {
+        $.ajax({
+            url: "/EPosta/EPostaGoruntule/" + id,
+            type: "GET",
+            contentType: "application/json;charset=UTF-8",
+            dataType: "json",
+            success: function (result) {
+                $('#icerik').val(result)
+
+                $('#icerikModal').modal('show');
+                $('#btnUpdate').show();
+                $('#btnAdd').hide();
+            },
+            error: function (errormessage) {
+                alert(errormessage.responseText);
+            }
+        });
+
+
+    }
+
+
+</script>

@@ -1,0 +1,83 @@
+﻿@model EPostaGonderimApp.ConsumeAPI.Models.KisiViewModels.KisiDetailVM
+
+@{
+    ViewData["Title"] = "Kisi Ekle";
+}
+
+<h1>Kisi Ekle</h1>
+@if (TempData["Alert"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>@TempData["Alert"]</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="KisiEkle">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Ad" class="control-label"></label>
+                <input asp-for="Ad" class="form-control" />
+                <span asp-validation-for="Ad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Soyad" class="control-label"></label>
+                <input asp-for="Soyad" class="form-control" />
+                <span asp-validation-for="Soyad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cinsiyet" class="control-label"></label>
+                <select class="custom-select" asp-for="Cinsiyet" asp-items="@ViewBag.Cinsiyet">
+                </select>
+                <span asp-validation-for="Cinsiyet" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DogumTarihi" class="control-label"></label>
+                <input asp-for="DogumTarihi" asp-format="{0:dd/MM/yyyy}" class="form-control" />
+                <span asp-validation-for="DogumTarihi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EPostaAdresi" class="control-label"></label>
+                <input asp-for="EPostaAdresi" class="form-control" />
+                <span asp-validation-for="EPostaAdresi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EvTelefonu" class="control-label"></label>
+                <input asp-for="EvTelefonu" class="form-control" />
+                <span asp-validation-for="EvTelefonu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CepTelefonu" class="control-label"></label>
+                <input asp-for="CepTelefonu" class="form-control" />
+                <span asp-validation-for="CepTelefonu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Unvan" class="control-label"></label>
+                <input asp-for="Unvan" class="form-control" />
+                <span asp-validation-for="Unvan" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IsYeriAdi" class="control-label"></label>
+                <input asp-for="IsYeriAdi" class="form-control" />
+                <span asp-validation-for="IsYeriAdi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Ekle" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="KisiListesi">Kişi Listesine Geri Dön</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
