@@ -1,0 +1,11 @@
+C:\Users\son\source\repos\EPostaGonderimApp\EPostaGonderimApp.EntityLayer\bin\Debug\net5.0\EPostaGonderimApp.EntityLayer.deps.json
+C:\Users\son\source\repos\EPostaGonderimApp\EPostaGonderimApp.EntityLayer\bin\Debug\net5.0\EPostaGonderimApp.EntityLayer.dll
+C:\Users\son\source\repos\EPostaGonderimApp\EPostaGonderimApp.EntityLayer\bin\Debug\net5.0\ref\EPostaGonderimApp.EntityLayer.dll
+C:\Users\son\source\repos\EPostaGonderimApp\EPostaGonderimApp.EntityLayer\bin\Debug\net5.0\EPostaGonderimApp.EntityLayer.pdb
+C:\Users\son\source\repos\EPostaGonderimApp\EPostaGonderimApp.EntityLayer\obj\Debug\net5.0\EPostaGonderimApp.EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\son\source\repos\EPostaGonderimApp\EPostaGonderimApp.EntityLayer\obj\Debug\net5.0\EPostaGonderimApp.EntityLayer.AssemblyInfoInputs.cache
+C:\Users\son\source\repos\EPostaGonderimApp\EPostaGonderimApp.EntityLayer\obj\Debug\net5.0\EPostaGonderimApp.EntityLayer.AssemblyInfo.cs
+C:\Users\son\source\repos\EPostaGonderimApp\EPostaGonderimApp.EntityLayer\obj\Debug\net5.0\EPostaGonderimApp.EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\son\source\repos\EPostaGonderimApp\EPostaGonderimApp.EntityLayer\obj\Debug\net5.0\EPostaGonderimApp.EntityLayer.dll
+C:\Users\son\source\repos\EPostaGonderimApp\EPostaGonderimApp.EntityLayer\obj\Debug\net5.0\ref\EPostaGonderimApp.EntityLayer.dll
+C:\Users\son\source\repos\EPostaGonderimApp\EPostaGonderimApp.EntityLayer\obj\Debug\net5.0\EPostaGonderimApp.EntityLayer.pdb
