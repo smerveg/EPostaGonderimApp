@@ -1,0 +1,15 @@
+C:\Users\son\source\repos\EPostaGonderimApp\EPostaGonderimApp.DAL\bin\Debug\net5.0\EPostaGonderimApp.DAL.deps.json
+C:\Users\son\source\repos\EPostaGonderimApp\EPostaGonderimApp.DAL\bin\Debug\net5.0\EPostaGonderimApp.DAL.dll
+C:\Users\son\source\repos\EPostaGonderimApp\EPostaGonderimApp.DAL\bin\Debug\net5.0\ref\EPostaGonderimApp.DAL.dll
+C:\Users\son\source\repos\EPostaGonderimApp\EPostaGonderimApp.DAL\bin\Debug\net5.0\EPostaGonderimApp.DAL.pdb
+C:\Users\son\source\repos\EPostaGonderimApp\EPostaGonderimApp.DAL\bin\Debug\net5.0\EPostaGonderimApp.EntityLayer.dll
+C:\Users\son\source\repos\EPostaGonderimApp\EPostaGonderimApp.DAL\bin\Debug\net5.0\EPostaGonderimApp.EntityLayer.pdb
+C:\Users\son\source\repos\EPostaGonderimApp\EPostaGonderimApp.DAL\obj\Debug\net5.0\EPostaGonderimApp.DAL.csproj.AssemblyReference.cache
+C:\Users\son\source\repos\EPostaGonderimApp\EPostaGonderimApp.DAL\obj\Debug\net5.0\EPostaGonderimApp.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\son\source\repos\EPostaGonderimApp\EPostaGonderimApp.DAL\obj\Debug\net5.0\EPostaGonderimApp.DAL.AssemblyInfoInputs.cache
+C:\Users\son\source\repos\EPostaGonderimApp\EPostaGonderimApp.DAL\obj\Debug\net5.0\EPostaGonderimApp.DAL.AssemblyInfo.cs
+C:\Users\son\source\repos\EPostaGonderimApp\EPostaGonderimApp.DAL\obj\Debug\net5.0\EPostaGonderimApp.DAL.csproj.CoreCompileInputs.cache
+C:\Users\son\source\repos\EPostaGonderimApp\EPostaGonderimApp.DAL\obj\Debug\net5.0\EPostaGonderimApp.DAL.csproj.CopyComplete
+C:\Users\son\source\repos\EPostaGonderimApp\EPostaGonderimApp.DAL\obj\Debug\net5.0\EPostaGonderimApp.DAL.dll
+C:\Users\son\source\repos\EPostaGonderimApp\EPostaGonderimApp.DAL\obj\Debug\net5.0\ref\EPostaGonderimApp.DAL.dll
+C:\Users\son\source\repos\EPostaGonderimApp\EPostaGonderimApp.DAL\obj\Debug\net5.0\EPostaGonderimApp.DAL.pdb
